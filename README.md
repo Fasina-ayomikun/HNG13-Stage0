@@ -5,14 +5,14 @@ It showcases a responsive, accessible **Profile Card** built with semantic HTML,
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
 🔗 **Live Site:** [https://hng-13-stage0-fasina-ayomikun.vercel.app/](https://hng-13-stage0-fasina-ayomikun.vercel.app/)  
 💻 **Repository:** [https://github.com/Fasina-ayomikun/HNG13-Stage0](https://github.com/Fasina-ayomikun/HNG13-Stage0)
 
 ---
 
-## 🧱 Project Structure
+## Project Structure
 
 ```
 
@@ -25,7 +25,7 @@ profile.jpg   # Avatar image
 
 ---
 
-## ⚙️ How to Run Locally
+## How to Run Locally
 
 1. **Clone the repository**
 
@@ -53,7 +53,7 @@ profile.jpg   # Avatar image
 
 ---
 
-## 🧩 Automated Test IDs
+## Automated Test IDs
 
 All required `data-testid` attributes are implemented for automated grading:
 
@@ -71,7 +71,7 @@ All required `data-testid` attributes are implemented for automated grading:
 
 ---
 
-## 🕒 Time Logic
+## Time Logic
 
 The current time in milliseconds is displayed using:
 
@@ -86,7 +86,7 @@ This ensures the displayed value is within a reasonable delta of `Date.now()`.
 
 ---
 
-## ♿ Accessibility Notes
+## Accessibility Notes
 
 - Semantic HTML: `<article>`, `<header>`, `<section>`, `<footer>`, `<nav>`, `<time>`
 - Images include descriptive `alt` text
@@ -96,7 +96,7 @@ This ensures the displayed value is within a reasonable delta of `Date.now()`.
 
 ---
 
-## 🧠 Design & Responsiveness
+## Design & Responsiveness
 
 - Responsive CSS built with Flexbox
 - Scales up smoothly to desktop layouts
@@ -105,7 +105,7 @@ This ensures the displayed value is within a reasonable delta of `Date.now()`.
 
 ---
 
-## 🧪 Notes for Reviewers / Testers
+## Notes for Reviewers / Testers
 
 - Built with **pure HTML, CSS, and vanilla JS**
 - No frameworks or libraries used
@@ -115,7 +115,7 @@ This ensures the displayed value is within a reasonable delta of `Date.now()`.
 
 ---
 
-## ✅ Local Test Checklist
+## Local Test Checklist
 
 - [x] All required `data-testid` attributes present
 - [x] Time equals `Date.now()` in milliseconds
