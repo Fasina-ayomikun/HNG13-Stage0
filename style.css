@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+
+    overflow-wrap: anywhere;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 20px;
+    line-height: 1.6;
+    word-break: break-word;
+}
+
+a {}
+
+
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 3px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.profile-header p {
+    color: #777;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.profile-bio {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.profile-bio h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.profile-bio p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.profile-socials ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 6px;
+}
+
+.profile-socials a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.profile-socials a:hover {
+    color: #0073e6;
+}
+
+.profile-socials a:focus {
+    color: #0073e6;
+    outline: none;
+}
+
+.hobbies,
+.dislikes {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.hobbies h3,
+.dislikes h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.hobbies ul,
+.dislikes ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.hobbies li,
+.dislikes li {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.5;
+    background-color: rgba(245, 52, 52, 0.1);
+    padding: 6px 15px;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.hobbies li:first-child,
+.dislikes li:first-child {
+    background-color: rgba(52, 245, 52, 0.1);
+}
+
+.hobbies li:nth-child(2),
+.dislikes li:nth-child(2) {
+    background-color: rgba(52, 137, 245, 0.1);
+}
+
+.hobbies li:nth-child(3),
+.dislikes li:nth-child(3) {
+    background-color: rgba(245, 223, 52, 0.1);
+}
+
+.hobbies li:nth-child(4),
+.dislikes li:nth-child(4) {
+    background-color: rgba(245, 52, 231, 0.1);
+}
+
+.hobbies li:nth-child(5),
+.dislikes li:nth-child(5) {
+    background-color: rgba(52, 245, 199, 0.1);
+}
+
+footer {
+
+    margin-top: 15px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #aaa;
+}
+
+
+
+@media (max-width:334px) {
+
+    .hobbies li,
+    .dislikes li {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+
+    .profile-socials a {
+        font-size: 0.8rem;
+    }
+}

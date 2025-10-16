@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HNG 13 - Stage 0 Task</title>
+  </head>
+  <body>
+    <main>
+      <article class="profile-card" data-testid="test-profile-card">
+        <figure class="profile-image">
+          <img
+            data-testid="test-user-avatar"
+            src="./profile.jpg"
+            alt="Portrait of Fasina Ayomikun"
+            width="200"
+          />
+        </figure>
+        <header class="profile-header">
+          <h2 data-testid="test-user-name">Fasina Ayomikun</h2>
+          <p>Frontend Developer</p>
+        </header>
+        <section class="profile-bio">
+          <h3>About Me</h3>
+          <p data-testid="test-user-bio">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
+            culpa atque quia assumenda fugit rem recusandae, voluptates enim
+            tenetur cumque laboriosam? Commodi ducimus facilis aperiam? Dolor
+            quidem aut deserunt nisi!
+          </p>
+        </section>
+
+        <section class="hobbies">
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Cooking</li>
+            <li>Reading</li>
+            <li>Traveling</li>
+            <li>Swimming</li>
+          </ul>
+        </section>
+
+        <section class="dislikes">
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Noise</li>
+            <li>Waiting in long queues</li>
+            <li>Dishonesty</li>
+          </ul>
+        </section>
+
+        <footer>
+          <nav class="profile-socials" data-testid="test-user-social-links">
+            <ul>
+              <li data-testid="test-user-social-twitter">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li data-testid="test-user-social-github">
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </li>
+              <li data-testid="test-user-social-linkedin">
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <p>
+            Current time <time datetime="" data-testid="test-user-time"></time>
+          </p>
+        </footer>
+      </article>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
