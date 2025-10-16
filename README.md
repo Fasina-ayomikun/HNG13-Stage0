@@ -7,8 +7,8 @@ It showcases a responsive, accessible **Profile Card** built with semantic HTML,
 
 ## Live Demo
 
-🔗 **Live Site:** [https://hng-13-stage0-fasina-ayomikun.vercel.app/](https://hng-13-stage0-fasina-ayomikun.vercel.app/)  
-💻 **Repository:** [https://github.com/Fasina-ayomikun/HNG13-Stage0](https://github.com/Fasina-ayomikun/HNG13-Stage0)
+**Live Site:** [https://hng-13-stage0.netlify.app/](https://hng-13-stage0.netlify.app/)  
+ **Repository:** [https://github.com/Fasina-ayomikun/HNG13-Stage0](https://github.com/Fasina-ayomikun/HNG13-Stage0)
 
 ---
 
