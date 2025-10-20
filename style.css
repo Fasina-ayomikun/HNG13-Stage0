@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* colour palette : #3a0ca3, #7209b7, #f72585 */
+
+:root {
+    --primary-color: #3a0ca3;
+    --secondary-color: #7209b7;
+    --accent-color: #f72585;
+    --background-color: #f0f2f5;
+    --text-color: #333;
+}
+
 * {
+
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -13,8 +24,11 @@ html {
 }
 
 body {
-    background-color: #f0f2f5;
+    background-color: var(--background-color);
     display: flex;
+    flex-direction: column;
+
+    gap: 20px;
     justify-content: center;
     align-items: center;
     height: fit-content;
@@ -23,9 +37,38 @@ body {
     word-break: break-word;
 }
 
-a {}
+.navigation {
+    width: 100%;
+    max-width: 400px;
+}
 
+.navigation .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
 
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.nav-links a:focus {
+    color: var(--accent-color);
+    outline: none;
+}
 
 .profile-card {
     background-color: #fff;
@@ -167,6 +210,94 @@ footer p {
 }
 
 
+/* Contact Page */
+
+.contact-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline-color: var(--accent-color);
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    outline-color: var(--accent-color);
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn {
+    outline-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 7px 15px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.success {
+    color: green;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* About Page */
+.about-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.about-page section {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.about-page section h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.about-page section p {
+    font-size: 0.9rem;
+    color: #555555;
+    line-height: 1.5;
+    margin: 3px 0;
+}
 
 @media (max-width:334px) {
 

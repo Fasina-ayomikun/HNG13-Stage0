@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HNG 13 - Stage 1 Task- Contact Page</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main class="contact-page profile-card">
+      <h2>Got a message?</h2>
+      <form data-testid="test-contact-form" novalidate class="contact-form">
+        <div>
+          <label for="name">Full Name</label>
+          <input
+            id="name"
+            type="text"
+            data-testid="test-contact-name"
+            required
+          />
+          <p
+            id="name-error"
+            class="error"
+            data-testid="test-contact-error-name"
+          ></p>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            data-testid="test-contact-email"
+            required
+            aria-describedby="email-error"
+          />
+          <p
+            id="email-error"
+            class="error"
+            data-testid="test-contact-error-email"
+          ></p>
+        </div>
+        <div>
+          <label for="subject">Subject</label>
+          <input
+            id="subject"
+            type="text"
+            data-testid="test-contact-subject"
+            required
+          />
+          <p
+            id="subject-error"
+            class="error"
+            data-testid="test-contact-error-subject"
+          ></p>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            data-testid="test-contact-message"
+            required
+          ></textarea>
+          <p
+            id="message-error"
+            class="error"
+            data-testid="test-contact-error-message"
+          ></p>
+        </div>
+        <button type="submit" data-testid="test-contact-submit" class="btn">
+          Submit
+        </button>
+      </form>
+
+      <p data-testid="test-contact-success" class="success" hidden>
+        Message sent successfully!
+      </p>
+    </main>
+    <script src="contact.js"></script>
+  </body>
+</html>
